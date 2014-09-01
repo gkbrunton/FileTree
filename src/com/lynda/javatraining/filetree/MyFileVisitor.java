@@ -113,9 +113,9 @@ public class MyFileVisitor extends SimpleFileVisitor<Path> {
 		long localAndSubFileSize = 0;
 
 		public String toString() {
-			return ("FileCount: " + localFileCount) + ", FileSize: "
-					+ sizeInfo.byteString(localFileSize) + ", SubFileCount: "
-					+ localAndSubFileCount + ", SubFileSize:"
+			return ("FC: " + localFileCount) + ", FS: "
+					+ sizeInfo.byteString(localFileSize) + ", SFC: "
+					+ localAndSubFileCount + ", SFS:"
 					+ sizeInfo.byteString(localAndSubFileSize);
 		}
 	}
