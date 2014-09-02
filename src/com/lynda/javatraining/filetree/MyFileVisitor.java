@@ -82,6 +82,7 @@ public class MyFileVisitor extends SimpleFileVisitor<Path> {
 								: StandardOpenOption.CREATE_NEW))) {
 			bw.write(dirCountSizeMap.toString());
 			bw.newLine();
+
 		} catch (IOException e) {
 			System.err.println(e.getMessage());
 		}
